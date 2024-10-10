@@ -33,6 +33,7 @@ class Program
         do
         {
             Console.Clear();
+            Console.WriteLine("|------ BIBLIOTECA ------|\n\n");
             Console.WriteLine("Você é:");
             Console.WriteLine("1) Administrador");
             Console.WriteLine("2) Usuário");
@@ -101,7 +102,6 @@ class Program
                 while (continuar != 1);
                 goto returnADM;
             case 2:
-                int continuar;
                 do
                 {
                     Console.Write("Digite o título do livro: ");
