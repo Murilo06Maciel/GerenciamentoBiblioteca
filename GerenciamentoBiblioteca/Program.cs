@@ -198,7 +198,7 @@ class Program
             Console.WriteLine("1) Catálogo");
             Console.WriteLine("2) Empréstimo");
             Console.WriteLine("3) Devolução");
-            Console.WriteLine("9) Sair");
+            Console.WriteLine("4) Sair");
             if (!int.TryParse(Console.ReadLine(), out opcao) || (opcao < 1 && opcao != 9))
             {
                 Console.WriteLine("\nNúmero inválido!");
@@ -313,7 +313,7 @@ class Program
                     Console.WriteLine("Nenhum livro disponível para devolução.");
                 }
                 goto returnUsuario;
-            case 9:
+            case 4:
                 Console.WriteLine("Saindo...");
                 goto returnGeral;
             default:
