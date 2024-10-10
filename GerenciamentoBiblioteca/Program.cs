@@ -39,13 +39,13 @@ class Program
             new Livro("Madame Bovary", "Gustave Flaubert", 1856, "Romance", "A vida de Emma Bovary, uma mulher insatisfeita com seu casamento e que busca a felicidade através de romances extraconjugais, culminando em tragédia. A obra critica a vida burguesa, a busca por ideais românticos e as consequências da insatisfação. Flaubert utiliza uma prosa detalhada para explorar os desejos e frustrações de sua protagonista.", 10),
             new Livro("As Flores do Mal", "Charles Baudelaire", 1857, "Poesia", "Esta coleção de poemas é um marco do simbolismo e explora a dualidade da beleza e da decadência. Baudelaire investiga a experiência moderna, a vida urbana e os contrastes entre a vida e a morte, o bem e o mal. Seus versos desafiam convenções e exploram os dilemas da alma humana, da sensualidade e da arte.", 10),
             new Livro("Os Miseráveis", "Victor Hugo", 1862, "Romance, Drama", "A história de Jean Valjean, um ex-prisioneiro que busca redenção e se depara com a injustiça social na França do século XIX. A narrativa interliga diversos personagens, como Fantine e Javert, em uma crítica ao sistema social e político da época. A obra explora temas de amor, sacrifício e a luta por justiça.", 10),
-            new Livro("O Médico e o Monstro", "Robert Louis Stevenson", 1886, "Ficção Científica, Gótico", "A luta interna entre o bem e o mal dentro de Dr. Jekyll, que cria um alter ego, Mr. Hyde, explorando a dualidade da natureza humana.", 10),
-            new Livro("O Retrato de Dorian Gray", "Oscar Wilde", 1890, "Ficção, Gótico", "Dorian Gray faz um pacto para manter sua juventude, enquanto seu retrato envelhece. A obra explora moralidade e os excessos da vida.", 10),
-            new Livro("Em Busca do Tempo Perdido", "Marcel Proust", 1913, "Romance", "A narrativa se concentra nas memórias de Marcel, refletindo sobre o tempo, a memória e a vida social na França do início do século XX.", 10),
-            new Livro("Ulisses", "James Joyce", 1922, "Ficção, Modernismo", "Segue Leopold Bloom em um único dia em Dublin, explorando a vida cotidiana e os pensamentos internos dos personagens, um marco do modernismo.", 10),
-            new Livro("Mrs. Dalloway", "Virginia Woolf", 1925, "Ficção, Modernismo", "A narrativa segue Clarissa Dalloway enquanto planeja uma festa, intercalando seus pensamentos e memórias sobre o tempo e a percepção.", 10),
-            new Livro("Admirável Mundo Novo", "Aldous Huxley", 1932, "Ficção Científica, Distopia", "Uma visão distópica de um futuro onde a sociedade é controlada pela tecnologia e a conformidade, explorando temas de liberdade e individualidade.", 10),
-            new Livro("1984", "George Orwell", 1949, "Distopia, Ficção Científica", "Em um futuro totalitário, Winston Smith luta contra um regime opressivo que controla todos os aspectos da vida humana, abordando temas de vigilância e manipulação da verdade.", 10)
+            new Livro("O Médico e o Monstro", "Robert Louis Stevenson", 1886, "Ficção Científica, Gótico", "", 10),
+            new Livro("O Retrato de Dorian Gray", "Oscar Wilde", 1890, "Ficção, Gótico", "", 10),
+            new Livro("Em Busca do Tempo Perdido", "Marcel Proust", 1913, "Romance", "", 10),
+            new Livro("Ulisses", "James Joyce", 1922, "Ficção, Modernismo", "", 10),
+            new Livro("Mrs. Dalloway", "Virginia Woolf", 1925, "Ficção, Modernismo", "", 10),
+            new Livro("Admirável Mundo Novo", "Aldous Huxley", 1932, "Ficção Científica, Distopia", "", 10),
+            new Livro("1984", "George Orwell", 1949, "Distopia, Ficção Científica", "", 10)
         };
         int escolha;
         int opcao = 0;
