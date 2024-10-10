@@ -68,7 +68,7 @@ class Program
 
         switch (escolha)
         {
-            case 1:0
+            case 1:
                 goto returnADM;
             case 2:
                 goto returnUsuario;
