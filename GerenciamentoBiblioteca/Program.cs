@@ -25,7 +25,28 @@ class Program
 {
     static void Main()
     {
-        List<Livro> livros = new List<Livro>();
+        List<Livro> livros = new List<Livro>()
+        {
+            new Livro("A Divina Comédia", "Dante Alighieri", 1320, "Poema épico", "Dividido em três partes — Inferno, Purgatório e Paraíso — A Divina Comédia narra a jornada de Dante através do além. Ele é guiado por Virgílio no Inferno e no Purgatório e por Beatriz no Paraíso. Cada canto revela as almas de diferentes pecadores e virtuosos, refletindo a moralidade, a justiça divina e a busca por salvação. A obra é uma profunda meditação sobre a vida, a morte e a espiritualidade.", 10),
+            new Livro("Hamlet", "William Shakespeare", 1603, "Tragédia", "Hamlet é a história do Príncipe da Dinamarca, que busca vingar a morte de seu pai, assassinado pelo tio, que agora ocupa o trono e se casou com a mãe de Hamlet. A peça explora a complexidade das emoções humanas, incluindo amor, traição, loucura e dúvida existencial. O famoso monólogo Ser ou não ser reflete as profundas questões sobre a vida e a morte que Hamlet enfrenta.", 10),
+            new Livro("Dom Quixote", "Miguel de Cervantes", 1605, "Romance", "Dom Quixote segue as aventuras de um fidalgo, Alonso Quixano, que, obcecado por romances de cavalaria, decide se tornar um cavaleiro andante. Com seu fiel escudeiro Sancho Pança, ele luta contra moinhos de vento que confunde com gigantes e busca restaurar a justiça. A obra é uma crítica à sociedade da época e à linha entre realidade e ilusão, questionando os ideais de heroísmo e sanidade.", 10),
+            new Livro("Fausto", "Johann Wolfgang von Goethe", 1808, "Tragédia", "Dom Quixote segue as aventuras de um fidalgo, Alonso Quixano, que, obcecado por romances de cavalaria, decide se tornar um cavaleiro andante. Com seu fiel escudeiro Sancho Pança, ele luta contra moinhos de vento que confunde com gigantes e busca restaurar a justiça. A obra é uma crítica à sociedade da época e à linha entre realidade e ilusão, questionando os ideais de heroísmo e sanidade.", 10),
+            new Livro("Orgulho e Preconceito", "Jane Austen", 1813, "Romance", "A história segue Elizabeth Bennet, uma jovem inteligente e forte, que navega as complexidades das relações sociais e amorosas no início do século XIX. Ao conhecer Mr. Darcy, um homem orgulhoso, Elizabeth enfrenta seus próprios preconceitos e descobre verdades sobre classe, moralidade e amor. A obra é uma crítica social envolta em humor e romance.", 10),
+            new Livro("Frankenstein", "Mary Shelley", 1818, "Ficção Científica, Gótico", "Victor Frankenstein, um jovem cientista, cria um ser a partir de partes de cadáveres. Ao perceber que sua criação é monstruosa e rejeitada pela sociedade, o monstro busca aceitação, mas é constantemente perseguido pelo desprezo. A história aborda temas de criação, responsabilidade e as consequências da ambição desenfreada, questionando o que significa ser humano.", 10),
+            new Livro("Os Três Mosqueteiros", "Alexandre Dumas", 1844, "Aventura, Romance", "A história segue d'Artagnan, um jovem que se junta aos mosqueteiros do rei da França. Ele se une a Athos, Porthos e Aramis em aventuras cheias de intrigas políticas e batalhas, enquanto luta contra o cardeal Richelieu e seus planos. O romance explora a amizade, a lealdade e o heroísmo, ao mesmo tempo em que oferece uma crítica à política da época.", 10),
+            new Livro("O Corvo", "Edgar Allan Poe", 1845, "Poesia, Gótico", "Este poema narrativo conta a história de um homem que, em um momento de luto pela perda de sua amada Lenore, é visitado por um corvo que fala. A presença do corvo simboliza a morte e a desesperança, enquanto o protagonista luta com sua dor e a inevitabilidade da perda. O poema é um exemplo do estilo gótico de Poe, explorando o desespero e a loucura.", 10),
+            new Livro("Moby Dick", "Herman Melville", 1851, "Ficção, Aventura", "A história gira em torno do Capitão Ahab, que busca vingar-se da baleia branca Moby Dick, que lhe arrancou a perna. A obra é uma profunda meditação sobre a natureza, a obsessão e a condição humana, explorando as complexidades do ser humano frente à força da natureza e o destino. A narrativa é rica em simbolismo e filosofia.", 10),
+            new Livro("Madame Bovary", "Gustave Flaubert", 1856, "Romance", "A vida de Emma Bovary, uma mulher insatisfeita com seu casamento e que busca a felicidade através de romances extraconjugais, culminando em tragédia. A obra critica a vida burguesa, a busca por ideais românticos e as consequências da insatisfação. Flaubert utiliza uma prosa detalhada para explorar os desejos e frustrações de sua protagonista.", 10),
+            new Livro("As Flores do Mal", "Charles Baudelaire", 1857, "Poesia", "Uma coleção de poemas que explora temas de beleza, decadência e a luta entre o bem e o mal na sociedade moderna.", 10),
+            new Livro("Os Miseráveis", "Victor Hugo", 1862, "Romance, Drama", "A história de Jean Valjean, um ex-prisioneiro que busca redenção em meio a injustiças sociais na França do século XIX.", 10),
+            new Livro("O Médico e o Monstro", "Robert Louis Stevenson", 1886, "Ficção Científica, Gótico", "A luta interna entre o bem e o mal dentro de Dr. Jekyll, que cria um alter ego, Mr. Hyde, explorando a dualidade da natureza humana.", 10),
+            new Livro("O Retrato de Dorian Gray", "Oscar Wilde", 1890, "Ficção, Gótico", "Dorian Gray faz um pacto para manter sua juventude, enquanto seu retrato envelhece. A obra explora moralidade e os excessos da vida.", 10),
+            new Livro("Em Busca do Tempo Perdido", "Marcel Proust", 1913, "Romance", "A narrativa se concentra nas memórias de Marcel, refletindo sobre o tempo, a memória e a vida social na França do início do século XX.", 10),
+            new Livro("Ulisses", "James Joyce", 1922, "Ficção, Modernismo", "Segue Leopold Bloom em um único dia em Dublin, explorando a vida cotidiana e os pensamentos internos dos personagens, um marco do modernismo.", 10),
+            new Livro("Mrs. Dalloway", "Virginia Woolf", 1925, "Ficção, Modernismo", "A narrativa segue Clarissa Dalloway enquanto planeja uma festa, intercalando seus pensamentos e memórias sobre o tempo e a percepção.", 10),
+            new Livro("Admirável Mundo Novo", "Aldous Huxley", 1932, "Ficção Científica, Distopia", "Uma visão distópica de um futuro onde a sociedade é controlada pela tecnologia e a conformidade, explorando temas de liberdade e individualidade.", 10),
+            new Livro("1984", "George Orwell", 1949, "Distopia, Ficção Científica", "Em um futuro totalitário, Winston Smith luta contra um regime opressivo que controla todos os aspectos da vida humana, abordando temas de vigilância e manipulação da verdade.", 10)
+        };
         int escolha;
         int opcao = 0;
 
@@ -89,8 +110,8 @@ class Program
                         Console.WriteLine("\nLivros cadastrados:");
                         foreach (var livro in livros)
                         {
-                            Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Ano: {livro.Ano}, Gênero: {livro.Genero}, Quantidade: {livro.Quantidade}");
-                            Console.WriteLine($"Resumo: {livro.Resumo}.\n\n");
+                            Console.WriteLine($"\nTítulo: {livro.Titulo};\nAutor: {livro.Autor};\nAno: {livro.Ano};\nGênero: {livro.Genero};\nQuantidade: {livro.Quantidade};");
+                            Console.WriteLine($"\nResumo: {livro.Resumo};\n\n");
                         }
                     }
 
@@ -126,8 +147,8 @@ class Program
                 Console.WriteLine("\nLivros cadastrados:");
                 foreach (var livro in livros)
                 {
-                    Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Ano: {livro.Ano}, Gênero: {livro.Genero}, Quantidade: {livro.Quantidade}");
-                    Console.WriteLine($"Resumo: {livro.Resumo}.\n\n");
+                    Console.WriteLine($"\nTítulo: {livro.Titulo};\nAutor: {livro.Autor};\nAno: {livro.Ano};\nGênero: {livro.Genero};\nQuantidade: {livro.Quantidade};");
+                    Console.WriteLine($"\nResumo: {livro.Resumo};\n\n");
                 }
                 goto returnADM;
             case 3:
@@ -202,8 +223,8 @@ class Program
                         Console.WriteLine("\nLivros cadastrados:");
                         foreach (var livro in livros)
                         {
-                            Console.WriteLine($"Título: {livro.Titulo}, Autor: {livro.Autor}, Ano: {livro.Ano}, Gênero: {livro.Genero}, Quantidade: {livro.Quantidade}");
-                            Console.WriteLine($"Resumo: {livro.Resumo}.\n\n");
+                            Console.WriteLine($"\nTítulo: {livro.Titulo};\nAutor: {livro.Autor};\nAno: {livro.Ano};\nGênero: {livro.Genero};\nQuantidade: {livro.Quantidade};");
+                            Console.WriteLine($"\nResumo: {livro.Resumo};\n\n");
                         }
                     }
 
