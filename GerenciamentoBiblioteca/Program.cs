@@ -65,17 +65,17 @@ class Program
             Console.WriteLine("2) Cadastrar livro");
             Console.WriteLine("3) Remover livro");
             Console.WriteLine("4) Sair");
-            if (!int.TryParse(Console.ReadLine(), out opcao) || (opcao < 1 || opcao > 3))
+            if (!int.TryParse(Console.ReadLine(), out opcao) || (opcao < 1 || opcao > 4))
             {
                 Console.WriteLine("\nNúmero inválido!");
             }
         }
-        while (opcao < 1 || opcao > 3);
+        while (opcao < 1 || opcao > 4);
 
         switch (opcao)
         {
             case 1:
-            int continuar;
+                int continuar;
                 do
                 {
                     if (livros.Count <= 0)
@@ -215,31 +215,52 @@ class Program
                 while (continuar != 1);
                 goto returnUsuario;
             case 2:
+                int totalEmprestados = 0; 
                 if (livros.Count > 0)
                 {
-                    Console.WriteLine("\nLivros disponíveis para empréstimo:");
-                    for (int i = 0; i < livros.Count; i++)
+                    do
                     {
-                        Console.WriteLine($"{i + 1}) Título: {livros[i].Titulo}, Quantidade: {livros[i].Quantidade}");
-                    }
-
-                    Console.Write("Digite o número do livro que deseja pegar emprestado: ");
-                    if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= livros.Count)
-                    {
-                        if (livros[indice - 1].Quantidade > 0)
+                        Console.WriteLine("\nLivros disponíveis para empréstimo:");
+                        for (int i = 0; i < livros.Count; i++)
                         {
-                            livros[indice - 1].Quantidade--;
-                            Console.WriteLine("Empréstimo realizado.");
+                            Console.WriteLine($"{i + 1}) Título: {livros[i].Titulo}, Quantidade: {livros[i].Quantidade}");
+                        }
+
+                        Console.Write("Digite o número do livro que deseja pegar emprestado: ");
+                        if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= livros.Count)
+                        {
+                            if (livros[indice - 1].Quantidade > 0)
+                            {
+                                if (totalEmprestados < 3) 
+                                {
+                                    livros[indice - 1].Quantidade--;
+                                    totalEmprestados++;
+                                    Console.WriteLine("Empréstimo realizado.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Você já pegou o máximo de 3 livros emprestados.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Livro indisponível para empréstimo.");
+                            }
                         }
                         else
                         {
-                            Console.WriteLine("Livro indisponível para empréstimo.");
+                            Console.WriteLine("Número inválido.");
+                        }
+
+                        Console.WriteLine("\nDeseja pegar mais um livro emprestado?");
+                        Console.WriteLine("1) Sim");
+                        Console.WriteLine("2) Não");
+                        if (int.TryParse(Console.ReadLine(), out continuar) && continuar == 2)
+                        {
+                            break;
                         }
                     }
-                    else
-                    {
-                        Console.WriteLine("Número inválido.");
-                    }
+                    while (true);
                 }
                 else
                 {
