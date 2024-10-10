@@ -20,7 +20,6 @@ public class Livro
         Quantidade = quantidade;
     }
 }
-
 class Program
 {
     static void Main()
